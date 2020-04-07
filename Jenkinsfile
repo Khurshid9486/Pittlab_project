@@ -8,7 +8,7 @@ pipeline {
                """
            } 
        }
-       stage("Adding users to groups")i {
+       stage("Adding users to groups") {
            steps{
                sh """
                   python groups.py 
