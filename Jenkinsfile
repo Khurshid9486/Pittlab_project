@@ -1,4 +1,4 @@
-peline {
+pipeline {
    agent any
    stages {
        stage("Creating users and groups") {
