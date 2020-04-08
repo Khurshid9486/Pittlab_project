@@ -15,7 +15,6 @@ pipeline {
                """
            }
        }
-       stages{
            stage ("Deleting users")
                steps {
                    sh """
