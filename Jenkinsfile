@@ -15,12 +15,12 @@ pipeline {
                """
            }
        }
-           stage ("Deleting users")
+      stage ("Deleting users") {
                steps {
                    sh """
                      python userdel.py
                    """
                }
        }
-  
+    }
   }
