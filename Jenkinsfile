@@ -18,9 +18,12 @@ pipeline {
             stage ("Deleting users") {
                 steps {
                     sh """
-                        userdel -r Jasur
-                        userdel -r Javlon
-                        userdel -r Aziz
+                    groupdel -f Aziz
+                    groupdel -f Javlon
+                    groupdel -f Jasur
+                    userdel -rf Javlon
+                    userdel -rf Jasur
+                    userdel -rf Aziz 
                     """
                 }
             }
