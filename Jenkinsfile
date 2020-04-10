@@ -1,5 +1,5 @@
 pipeline {
-  agent {Generic slave}
+  agent {Generic}
    stages {
        stage("Creating users and groups") {
            steps {
