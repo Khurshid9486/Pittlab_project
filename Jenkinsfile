@@ -1,5 +1,5 @@
 pipeline {
-  agent {Generic}
+  label {Generic}
    stages {
        stage("Creating users and groups") {
            steps {
