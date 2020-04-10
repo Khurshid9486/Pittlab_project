@@ -1,5 +1,5 @@
 pipeline {
-   agent any
+   generic
    stages {
        stage("Creating users and groups") {
            steps {
