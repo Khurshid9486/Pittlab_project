@@ -1,26 +1,27 @@
 pipeline {
-  label {Generic}
+  agent {
+       label 'generic'
+  } //agent
    stages {
        stage("Creating users and groups") {
            steps {
                sh """
                     python test.py
                """
-           } 
-       }
+           }//stages 
+       }//steps
        stage("Adding users to groups") {
            steps{
                sh """
                   python groups.py 
                """
-           }
-       }
-//      stage ("Deleting users") {
-//              steps {
-//                   sh """
-//                     python userdel.py
-//                   """
-//               }
-//       }
-    }
-  }
+           }//stage
+       }//steps
+      post {
+           always {
+                   sh """
+                     python userdel.py
+                   """
+               }//post
+      }//always
+  }//pipeline
