@@ -18,11 +18,11 @@ pipeline {
            }//stage
        }//steps
    }//pipeline
-}
-     post{
-           always{
-               sh """
-                  python userdel.py
-               """
-           }//post
-     }//always
+//}
+//     post{
+//           always{
+//               sh """
+//                  python userdel.py
+//               """
+//           }//post
+//     }//always
