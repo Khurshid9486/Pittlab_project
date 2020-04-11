@@ -21,7 +21,7 @@ pipeline {
            always{
                sh """
                   python userdel.py
-                   """
+               """
                }//post
       }//always
   }//pipeline
