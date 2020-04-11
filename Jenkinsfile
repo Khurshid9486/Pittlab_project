@@ -17,8 +17,8 @@ pipeline {
                """
            }//stage
        }//steps
-       post {
-           always {
+       post{
+           always{
                sh """
                   python userdel.py
                    """
