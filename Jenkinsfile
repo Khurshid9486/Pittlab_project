@@ -17,12 +17,5 @@ pipeline {
                """
            }//stage
        }//steps
-       post{
-           always{
-               sh """
-                  python userdel.py
-               """
-               }//post
-      }//always
-  }//pipeline
+   }//pipeline
 }
