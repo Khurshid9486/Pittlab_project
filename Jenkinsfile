@@ -19,3 +19,10 @@ pipeline {
        }//steps
    }//pipeline
 }
+     post{
+           always{
+               sh """
+                  python userdel.py
+               """
+           }//post
+     }//always
