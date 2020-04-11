@@ -18,7 +18,7 @@ pipeline {
            }//stage
        }//steps
    }//pipeline
-//}
+}
 //     post{
 //           always{
 //               sh """
