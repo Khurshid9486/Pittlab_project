@@ -1,7 +1,6 @@
 pipeline {
-  agent {
-       label 'generic'
-  } //agent
+  agent any
+  
    stages {
        stage("Creating users and groups") {
            steps {
