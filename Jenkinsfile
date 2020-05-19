@@ -5,7 +5,7 @@ pipeline {
        stage("Creating users and groups") {
            steps {
                sh """
-                    python test.py
+                    python userdel.py
                """
            }//stages 
        }//steps
@@ -21,7 +21,7 @@ pipeline {
      post{
            always{
                sh """
-                  python userdel.py
+                  python test.py
                """
            }//post
      }//always
