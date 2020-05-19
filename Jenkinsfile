@@ -2,26 +2,33 @@ pipeline {
   agent any
   
    stages {
-       stage("Creating users and groups") {
+       stage("makins sure that users are deleted first") {
            steps {
                sh """
                     python userdel.py
                """
            }//stages 
        }//steps
-       stage("Adding users to groups") {
+       stage("creating those users") {
            steps{
                sh """
-                  python groups.py 
+                  python test.py
                """
            }//stage
        }//steps
    }//pipeline
 }
+      stage("adding those users to the group") {
+           steps{
+               sh """
+                  python test.py
+               """
+           }//stage
+       }//steps
      post{
            always{
                sh """
-                  python test.py
+                  python userdel.py
                """
            }//post
      }//always
