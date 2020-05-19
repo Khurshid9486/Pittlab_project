@@ -1,7 +1,7 @@
 import os
-os.system("useradd Jasur")
-os.system("useradd Javlon")
-os.system("useradd Aziz")
-os.system("groupadd Students")
-os.system("groupadd Engineers")
-os.system("groupadd Devops")
+os.system("sudo useradd Jasur")
+os.system("sudo useradd Javlon")
+os.system("sudo useradd Aziz")
+os.system("sudo groupadd Students")
+os.system("sudo groupadd Engineers")
+os.system("sudo groupadd Devops")
