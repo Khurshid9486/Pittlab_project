@@ -21,7 +21,7 @@ pipeline {
       stage("adding those users to the group") {
            steps{
                sh """
-                  python test.py
+                  python group.py
                """
            }//stage
        }//steps
